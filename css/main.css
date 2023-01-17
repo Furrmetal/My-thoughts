@@ -1,0 +1,53 @@
+a:visited, a:link {
+	text-decoration: none;
+	color: #423189;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+	color: #354D73;
+}
+table {
+ 	border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+ }
+
+label, input {
+ 	padding: 5px;
+ }
+
+audio {
+  width: 35%;
+  margin: 7px;
+  border-radius: 11px;
+}
+
+video {
+	max-width: 40%;
+	max-height: 40%;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+hr {
+  color: powderblue;
+}
+
+address {
+	text-align:center;
+	font-size:80%;
+}
+
+textarea {
+	margin-bottom: 10px;
+	background-color: #708090;
+	outline: none;
+	border: 0px;
+}
+
+h4 {
+	margin:6px;
+	margin-bottom: 0px;
+}
