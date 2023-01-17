@@ -1,12 +1,14 @@
 #article {
 	font-family: 'Montserrat', sans-serif;
 }
+/* id для body */
 
 .main {
 	width: 100%;
 	box-sizing: border-box;
 	font-family: sans-serif;
 }
+/* общий class для обычных элементов */
 
 .bq {
 	width: 65%;
@@ -17,6 +19,7 @@
 	font-family: sans-serif;
 	box-sizing: border-box;
 }
+/* класс для блочной цитаты (зачем?(переделать) */
 
 .pr {
 	width: 35%;
@@ -27,6 +30,8 @@
 	font-family: sans-serif;
 	box-sizing: border-box;
 }
+/* класс для стиха и вообще предварительно отредактиврованного текста
+   важно !!! нужно сделать нормальные размеры для блока и подумать куда вставить*/
 
 .navbar {
 	z-index: 2;
@@ -36,32 +41,30 @@
     top: 0;
     background: #C8A2C8;
 }
+/* контейнер навигационного меню сверху, общий блок */
 
 .container-sec {
 	width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: -15px;
+    padding-left: -15px;
     margin-right: auto;
     margin-left: auto;
 }
-
-.flex-menu {
-	display: flex;
-	flex-wrap: wrap;
-	margin-right: -15px;
-	margin-left: -15px;
-}
+/* блок содержащий элементы как раз менюшки но как общий блок всего внутри, внутри блока который вон сверху
+   да, сложно воспринять поначалу, но вот так вот */
 
 .content-menu {
 	width: 100%;
 	position: relative;
 }
+/* содержит уже все элементы, от лого до списка поблочно, читай далее внимательнее что моя шиза придумала */
 
 .content-menu img{
 	width: 47px;
 	height: 47px;
 	float: left;
 }
+/* стили для лого слева */
 
 .main-nav {
 	float: left;
@@ -69,37 +72,44 @@
 	margin: 0px;
 	padding: 0px;
 }
+/* не понимаю почему, но если это убрать то лого уезжает куда-то в пустоту, переделать, оптимизировать */
 
 .navbar nav {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     padding-left: 5px;
 }
+/* стили для блока списка */
 
 .navbar ul {	
 	margin: 0px;
 	padding: 0px;
 }
+/* стили для списка самого */
 
 .navbar li {
 	display: inline-block;
 	color: #423132;
 	text-decoration: none;
 }
+/* стили для каждого элемента списка, инлайн блок каким-то образом влияет на расположение по горизонтали
+   надо учиться дальше */
 
 .navbar a {
 	display: block;
 	padding: 10px;
 	border-radius: 13px;
 }
+/* контент каждого элемента списка (стили для них), сами элементы я определил как блоки выше, а контент в гиперссылках */
 
 .navbar li a:hover {
 	background-color: rebeccapurple;
 	text-decoration: none;
 	color: #423132;
 }
+/* поведение блока при наведении курсора на него */
 
 #logo {
 	padding: 0px;
 }
+/* интересно */
