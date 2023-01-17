@@ -1,0 +1,105 @@
+#article {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+	width: 100%;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.bq {
+	width: 65%;
+	border: 2px solid #840084;
+	border-radius: 10px;
+	padding: 0px;
+	margin: 5px;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+.pr {
+	width: 35%;
+	border: 2px dotted #840084;
+	border-radius: 10px;
+	padding: 0px;
+	margin: 5px;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+.navbar {
+	z-index: 2;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #C8A2C8;
+}
+
+.container-sec {
+	width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.flex-menu {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.content-menu {
+	width: 100%;
+	position: relative;
+}
+
+.content-menu img{
+	width: 47px;
+	height: 47px;
+	float: left;
+}
+
+.main-nav {
+	float: left;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.navbar ul {	
+	margin: 0px;
+	padding: 0px;
+}
+
+.navbar li {
+	display: inline-block;
+	color: #423132;
+	text-decoration: none;
+}
+
+.navbar a {
+	display: block;
+	padding: 10px;
+	border-radius: 13px;
+}
+
+.navbar li a:hover {
+	background-color: rebeccapurple;
+	text-decoration: none;
+	color: #423132;
+}
+
+#logo {
+	padding: 0px;
+}
