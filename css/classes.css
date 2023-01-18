@@ -3,20 +3,18 @@
 }
 /* id для body */
 
-.main {
+.main-content {
 	width: 100%;
-	box-sizing: border-box;
-	font-family: sans-serif;
+	border: ;
 }
 /* общий class для обычных элементов */
 
-.bq {
-	width: 65%;
+#bq {
+	width: 80%;
 	border: 2px solid #840084;
 	border-radius: 10px;
 	padding: 0px;
 	margin: 5px;
-	font-family: sans-serif;
 	box-sizing: border-box;
 }
 /* класс для блочной цитаты (зачем?(переделать) */
