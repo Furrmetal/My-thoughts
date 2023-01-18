@@ -60,3 +60,7 @@ select {
 	padding: 5px;
   color: #893889;
 }
+
+header {
+	display: block;
+}
