@@ -9,7 +9,7 @@
 	border-top: 2px solid #840084;
 	border-bottom: 2px solid #840084;
    background-color: #984298;
-   margin: auto;
+   margin: 0px;
 }
 /* общий class для обычных элементов */
 
@@ -20,22 +20,24 @@
 }
 
 #bq {
+	border-left: 4px solid #340E34;
+	background-color: #7F147F;
 	width: 80%;
 	padding: 0px;
-	margin: 5px;
+	margin-left: 15px;
 	box-sizing: border-box;
 }
 /* класс для блочной цитаты (зачем?(переделать) */
 
 .forhead {
 	border-bottom: 2px dashed #840084;
-	border-right: 2px dashed #840084;
-	border-left: 2px dashed #840084;
 	background-color: #A93B74;
 	padding: 0px;
+	margin: 0px;
 }
 
 .forhead h3 {
+	box-sizing: border-box;
 	margin: 0px;
 	padding: 15px;
 }

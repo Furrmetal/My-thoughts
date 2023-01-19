@@ -8,10 +8,10 @@ a:hover, a:active {
 	color: #354D73;
 }
 table {
- 	border-top: 2px solid #6F2461;
-  border-radius: 0px;
   text-align: center;
   width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
  }
 
 label, input {
@@ -29,11 +29,6 @@ video {
 	max-height: 40%;
 	margin: 10px;
 	border-radius: 10px;
-}
-
-hr {
-	border-color: #6F2461;
-  color: #57134A;
 }
 
 address {
