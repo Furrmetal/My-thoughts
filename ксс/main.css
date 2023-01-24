@@ -1,0 +1,62 @@
+a:visited, a:link {
+	text-decoration: none;
+	color: #423189;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+	color: #354D73;
+}
+
+table {
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+ }
+
+label, input {
+ 	padding: 5px;
+ }
+
+audio {
+  width: 35%;
+  margin: 7px;
+  border-radius: 11px;
+}
+
+video {
+	max-width: 40%;
+	max-height: 40%;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+address {
+	text-align:center;
+	font-size:80%;
+}
+
+textarea {
+	margin-bottom: 10px;
+	background-color: #708090;
+	outline: none;
+	border: 0px;
+}
+
+h4 {
+	margin:6px;
+	margin-bottom: 0px;
+}
+
+select {
+	background-color: #282a36;
+	border: 0px;
+	border-radius: 10px;
+	padding: 5px;
+  color: #893889;
+}
+
+header {
+	display: block;
+}
