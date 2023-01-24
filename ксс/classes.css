@@ -34,7 +34,7 @@
 }
 
 .Навигация img {
-	width: 45px;
+	width: 40px;
 	border-radius: 50px;
 }
 
@@ -104,16 +104,17 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	flex: 1;
-	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
 }
 
-.Шиза p {
-	display: block;
-	margin: 20px;
+.Стишки p {
+	padding: 15px;
+	flex: 1;
+	font-size: 90%;
+	font-style: oblique;
+	text-align: center;
 }
-/* класс для стиха и вообще предварительно отредактиврованного текста
-   важно !!! нужно сделать нормальные размеры для блока и подумать куда вставить*/
 
 .Футер {
 	margin: 0px;
