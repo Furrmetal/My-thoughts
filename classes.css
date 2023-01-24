@@ -1,0 +1,156 @@
+#Тело {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0px;
+	background-color: #984298;
+}
+/* id для body */
+
+.Верхняя-панель  {
+	z-index: 2;
+   height: 50px;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   background-image: url(../медиа/задник-верх.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+/* контейнер навигационного меню сверху, общий блок */
+
+.Навигация {
+	height: 100%;
+	padding-left: 10px;
+	display: flex;
+   align-items: center;
+}
+/* стили для блока списка */
+
+.Навигация nav {
+	padding-left: 5px;
+}
+
+.Навигация img {
+	width: 40px;
+	border-radius: 50px;
+}
+
+.Навигация ul {	
+	margin: 0px;
+	padding-left: 5px;
+}
+/* стили для списка самого */
+
+.Навигация li {
+	display: inline-block;
+	text-decoration: none;
+}
+/* стили для каждого элемента списка, инлайн блок каким-то образом влияет на расположение по горизонтали
+   надо учиться дальше */
+
+.Навигация a {
+	display: block;
+	padding: 10px;
+	border-radius: 15px;
+}
+/* контент каждого элемента списка (стили для них), сами элементы я определил как блоки выше, а контент в гиперссылках */
+
+.Навигация li a:hover {
+	background-color: #6400c8;
+	text-decoration: none;
+	color: #BA20BA;
+}
+/* поведение блока при наведении курсора на него */
+
+.Главный-контент {
+	block-size: ;
+	width: 100%;
+   margin: 0px;
+}
+/* общий class для обычных элементов */
+
+.Сам-контент {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+}
+
+.Цитата {
+	border-left: 4px solid #340E34;
+	background-color: #7F147F;
+	width: 80%;
+	padding: 0px;
+	margin-left: 15px;
+	box-sizing: border-box;
+}
+/* класс для блочной цитаты (зачем?(переделать) */
+
+.Мюсли {
+	background-color: #A93B74;
+	padding: 0px;
+	margin: 0px;
+}
+
+.Мюсли h2 {
+	padding: 10px 0px 8.5px 0px;
+	text-align: center;
+	width: 100%;
+}
+
+.Стишки {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+}
+
+.Стишки p {
+	margin-top: 0px;
+	padding: 15px;
+	flex: 1;
+	font-size: 90%;
+	font-style: oblique;
+	text-align: center;
+}
+
+.Футер {
+	margin: 0px;
+}
+
+.Послесловие {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	line-height: 32.5px;
+}
+
+.Послесловие ul {
+	margin: 10px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+	flex: 1 auto;
+	text-align: center;
+	list-style: none;
+}
+
+.Послесловие ul a {
+	text-decoration: none;
+	color: black;
+}
+
+.Послесловие h3 {
+	padding: 0px;
+	margin: 0px;
+}
+
+.Футер p {
+	text-align: center;
+   font-style: italic;
+   font-size: 80%;
+}
