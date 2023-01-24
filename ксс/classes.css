@@ -94,10 +94,10 @@
 	margin: 0px;
 }
 
-.Мюсли h3 {
-	box-sizing: border-box;
-	margin: 0px;
-	padding: 15px;
+.Мюсли h2 {
+	padding: 10px 0px 8.5px 0px;
+	text-align: center;
+	width: 100%;
 }
 
 .Стишки {
@@ -109,6 +109,7 @@
 }
 
 .Стишки p {
+	margin-top: 0px;
 	padding: 15px;
 	flex: 1;
 	font-size: 90%;
