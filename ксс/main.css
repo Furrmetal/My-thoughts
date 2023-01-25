@@ -1,3 +1,11 @@
+html {
+	block-size: border-box;
+}
+
+*::not(img), *, *::after, *::before {
+	block-size: inherit;
+}
+
 a:visited, a:link {
 	text-decoration: none;
 	color: #423189;
@@ -18,19 +26,6 @@ table {
 label, input {
  	padding: 5px;
  }
-
-audio {
-  width: 35%;
-  margin: 7px;
-  border-radius: 11px;
-}
-
-video {
-	max-width: 40%;
-	max-height: 40%;
-	margin: 10px;
-	border-radius: 10px;
-}
 
 address {
 	text-align:center;

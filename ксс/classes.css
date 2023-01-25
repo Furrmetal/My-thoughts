@@ -2,13 +2,14 @@
    font-family: 'Sofia Sans', sans-serif;
    font-size: 105%;
 	margin: 0px;
-	background-color: #262626;
+	background: linear-gradient(90deg, rgba(38,31,31,1) 0%, rgba(88,26,73,1) 51%, rgba(138,27,87,1) 100%);
 	color: #ccc8c1;
 	line-height: 22.5px;
 }
 /* id для body */
 
 .Верхняя-панель  {
+	opacity: 0.8;
 	z-index: 2;
    height: 50px;
    width: 100%;
@@ -17,10 +18,7 @@
    display: flex;
    align-items: center;
    justify-content: flex-start;
-   background-image: url(../медиа/задник-верх.png);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+   background: url(../медиа/задник-верх.png)  right center/cover no-repeat;
 }
 /* контейнер навигационного меню сверху, общий блок */
 
@@ -69,7 +67,6 @@
 /* поведение блока при наведении курсора на него */
 
 .Главный-контент {
-	block-size: ;
 	width: 100%;
    margin: 0px;
 }
@@ -91,9 +88,8 @@
 }
 
 .Цитата {
-	border: 2px solid #737373;
 	border-radius: 7px;
-	background-color: #2f2f2f;
+	background-color: #161111;
 	padding: 0px;
 	margin: 17px 0px 17px 15px;
 	width: 80%;
@@ -101,8 +97,8 @@
 /* класс для блочной цитаты (зачем?(переделать) */
 
 .Мюсли {
-	background-color: #2f2f2f;
-	border-top: 3px solid #737373;
+	background: linear-gradient(55deg, rgba(39,33,41,1) 0%, rgba(83,38,74,1) 44%, rgba(151,41,88,1) 100%);
+	border-top: 5px solid #2A2121;
 	padding: 0px;
 	margin: 0px;
 }
@@ -116,7 +112,7 @@
 .Стишки {
 	display: flex;
    flex-direction: row;
-   align-content: center;
+   align-items: center;
 	width: 100%;
 	height: 100%;
 }
@@ -132,8 +128,9 @@
 }
 
 .Футер {
+	opacity: 0.6;
 	color: #282828;
-	background-color: #625871;
+	background-color: #9E9E9E;
 	margin: 0px;
 }
 
