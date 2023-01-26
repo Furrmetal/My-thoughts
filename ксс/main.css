@@ -16,13 +16,6 @@ a:hover, a:active {
 	color: #354D73;
 }
 
-table {
-  text-align: center;
-  width: 100%;
-  margin-top: 15px;
-  margin-bottom: 15px;
- }
-
 label, input {
  	padding: 5px;
  }
@@ -59,4 +52,9 @@ header {
 hr {
 	color: #242424;
 	margin: 0px 15px 0px 15px;
+}
+
+h2 {
+  display: inline-block;
+  width: max-content;
 }
