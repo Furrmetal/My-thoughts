@@ -172,7 +172,7 @@
    display: grid;
    grid-template-areas: "col1 col2 col3";
    grid-template-columns: repeat(3, 1fr);
-   grid-row: max-content;
+   grid-template-rows: max-content;
    line-height: 33px;
    margin: 0px;
    padding-top: 15px;
