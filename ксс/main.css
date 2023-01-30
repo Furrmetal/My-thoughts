@@ -52,7 +52,24 @@ textarea {
 	border: 0px;
 }
 
+h1 {
+	font-size: 150%;
+	font-family: 'Monsterrat', sans-serif;
+}
+
+h2 {
+	font-size: 130%;
+	font-family: 'Monsterrat', sans-serif;
+  display: inline-block;
+  width: max-content;
+}
+
+h3 {
+	font-family: 'Monsterrat', sans-serif;
+}
+
 h4 {
+	font-family: 'Monsterrat', sans-serif;
 	margin:6px;
 	margin-bottom: 0px;
 }
@@ -72,9 +89,4 @@ header {
 hr {
 	color: #242424;
 	margin: 0px 15px 0px 15px;
-}
-
-h2 {
-  display: inline-block;
-  width: max-content;
 }

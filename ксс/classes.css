@@ -76,15 +76,30 @@
 }
 
 .Сайдбар {
+	padding-left: 15px;
 	grid-area: sidebar;
 }
 
+.Сайдбар a {
+	padding: 20px;
+	background: none;
+	border: none;
+	text-decoration: none;
+	color: inherit;
+}
+
 .Сайдбар ul {
+	line-height: 35px;
+	padding-left: 0;
 	width: max-content;
 	height: max-content;
 	border-left: 2px solid black;
-	position: sticky;
 	list-style-type: none;
+}
+
+.Сайдбар ul li:hover {
+	background: rgba(27, 28, 28, 0.88);
+	block-size: border-box;
 }
 
 .Сам-контент {
@@ -127,7 +142,7 @@
    	grid-template-areas: "text text";
    }
 
-   .Сайдбар ul {
+   .Сайдбар {
    	display: none;
    }
 }
@@ -155,12 +170,18 @@
 }
 
 .Мюсли table tr td{
-	padding: 10px;
+	padding: 8px 0px 25px 0px;
 	width: 100%;
    text-align: center;
    font-size: 95%;
    font-style: italic;
 }
+
+.Мюсли h3 {
+   margin-bottom: 8px;
+   margin-top: 0px;
+}
+
 /* Стили для стишком, все очень просто (предельно просто, лишь взгляните в хтмл) */
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -237,6 +258,8 @@
 }
 
 .Титры h3 {
+	font-size: 90%;
+	font-family: 'Press Start 2P', cursive;
 	padding: 0px;
 	margin: 0px;
 }
