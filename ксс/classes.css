@@ -15,7 +15,7 @@
 	z-index: 2;
    height: 50px;
    width: 100%;
-   position: fixed;
+   position: sticky;
    top: 0;
    display: flex;
    align-items: center;
@@ -56,6 +56,7 @@
 }
 
 .Навигация li a:hover {
+	border-bottom: none;
 	background-color: #6400c8;
 	text-decoration: none;
 	color: #BA20BA;
@@ -66,8 +67,24 @@
 /* ------------------------------------------------------------------------------------------------------- */
 
 .Главный-контент {
+	display: grid;
+	grid-template-columns: 80% 20%;
+	grid-gap: 1vw;
 	width: 100%;
    margin: 0px;
+}
+
+.Сайдбар ul {
+	height: max-content;
+	border-left: 2px solid black;
+	position: sticky;
+	list-style-type: none;
+}
+
+@media screen and (max-width: 920px) {
+   .Сайдбар ul {
+   	display: none;
+   }
 }
 
 .Сам-контент {
@@ -77,6 +94,10 @@
 }
 
 .Сам-контент ul {
+	position: static;
+	height: initial;
+	border: none;
+	list-style-type: disc;
 	margin-top: 0px;
 }
 
@@ -92,6 +113,7 @@
 	margin: 17px 0px 17px 15px;
 	width: 80%;
 }
+
 /* Стили для главного контента на странице как и для стишков снизу, секретов нет, лишь простота*/
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -99,7 +121,7 @@
 
 .Мюсли {
 	display: flex;
-	flex-direction: column;
+	flex-flow: column wrap;
 	align-items: center;
 	justify-content: center;
 	background: linear-gradient(55deg, rgba(39,33,41,1) 0%, rgba(83,38,74,1) 44%, rgba(151,41,88,1) 100%);
@@ -110,11 +132,13 @@
 
 .Мюсли table {
 	width: 100%;
-	padding: 5vw;
+	padding: 1vw;
+	padding-bottom: 0px;
 }
 
 .Мюсли table tr td{
-	width: 50%;
+	padding: 10px;
+	width: 100%;
    text-align: center;
    font-size: 95%;
    font-style: italic;
@@ -126,7 +150,7 @@
 
 .Футер {
 	opacity: 0.6;
-	color: #282828;
+	color: #313131;
 	background-color: #9E9E9E;
 	margin: 0px;
 }
@@ -145,26 +169,53 @@
 
 
 .Титры {
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-	line-height: 32.5px;
+   display: grid;
+   grid-template-areas: "col1 col2 col3";
+   grid-template-columns: repeat(3, 1fr);
+   grid-row: max-content;
+   line-height: 33px;
+   margin: 0px;
+   padding-top: 15px;
+   padding-bottom: 15px;
 }
 
 .Титры ul {
-	margin: 10px;
+   margin: auto;
+}
+
+.столб-1 {
+   grid-area: col1;
+}
+
+.столб-2 {
+   grid-area: col2;
+}
+
+.столб-3 {
+	grid-area: col3;
+}
+
+.Титры ul {
 	padding: 0px;
 	height: 100%;
 	width: 100%;
-	flex: 1 auto;
 	text-align: center;
 	list-style: none;
 }
 
 .Титры ul a {
 	text-decoration: none;
-	color: #282828;
+	color: #313131;
+}
+
+@media screen and (max-width: 920px) {
+	.Титры {
+     row-gap: 25px;
+	  grid-template-areas: "col1 col2"
+	                       "col3 col3";
+	  grid-template-columns: repeat(2, 1fr);
+	  grid-template-rows: max-content max-content;
+	}
 }
 
 .Титры h3 {

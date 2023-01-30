@@ -6,14 +6,34 @@ html {
 	block-size: inherit;
 }
 
-a:visited, a:link {
-	text-decoration: none;
-	color: #423189;
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
 }
 
-a:hover, a:active {
-	text-decoration: underline;
-	color: #354D73;
+
+a:link {
+  color: #4a2bce;
+}
+
+a:visited {
+  color: #4a2bce;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  background: #7758fb;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  background: #6b4cf4;
+}
+
+a:active {
+  background: #7353ff;
+  color: #4a2bce;
 }
 
 label, input {
