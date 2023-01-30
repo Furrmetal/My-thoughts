@@ -68,26 +68,28 @@
 
 .Главный-контент {
 	display: grid;
-	grid-template-columns: 80% 20%;
+	grid-template-areas: "text sidebar";
+	grid-template-columns: 4fr 1fr;
 	grid-gap: 1vw;
 	width: 100%;
    margin: 0px;
 }
 
+.Сайдбар {
+	grid-area: sidebar;
+}
+
 .Сайдбар ul {
+	width: max-content;
 	height: max-content;
 	border-left: 2px solid black;
 	position: sticky;
 	list-style-type: none;
 }
 
-@media screen and (max-width: 920px) {
-   .Сайдбар ul {
-   	display: none;
-   }
-}
-
 .Сам-контент {
+	line-height: 26.5px;
+	grid-area: text;
 	display: flex;
 	flex-direction: column;
 	padding: 15px;
@@ -103,7 +105,7 @@
 
 .Сам-контент p {
 	margin: 0px;
-	margin-top: 17px;
+	margin-top: 25px;
 }
 
 .Цитата {
@@ -112,6 +114,22 @@
 	padding: 0px;
 	margin: 17px 0px 17px 15px;
 	width: 80%;
+}
+
+@media screen and (max-width: 920px) {
+
+	.Цитата {
+		width: 90%;
+		margin-right: 0px
+	}
+
+   .Главный-контент {
+   	grid-template-areas: "text text";
+   }
+
+   .Сайдбар ul {
+   	display: none;
+   }
 }
 
 /* Стили для главного контента на странице как и для стишков снизу, секретов нет, лишь простота*/
@@ -172,7 +190,7 @@
    display: grid;
    grid-template-areas: "col1 col2 col3";
    grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: max-content;
+   grid-row: max-content;
    line-height: 33px;
    margin: 0px;
    padding-top: 15px;
