@@ -151,10 +151,10 @@
 
 @media screen and (max-width: 920px) {
 
-	.Цитата {
-		width: 90%;
-		margin-right: 0px
-	}
+   .Цитата {
+	width: 90%;
+	margin-left: 0px
+   }
 
    .Главный-контент {
    	grid-template-areas: "text text";
