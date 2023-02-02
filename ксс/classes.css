@@ -1,6 +1,6 @@
 #Тело {
-   font-family: 'Sofia Sans', sans-serif;
-   font-size: 105%;
+   font-family: 'Neucha', cursive;
+   font-size: 20px;
 	margin: 0px;
 	background: linear-gradient(90deg, rgba(38,31,31,1) 0%, rgba(88,26,73,1) 51%, rgba(138,27,87,1) 100%);
 	color: #ccc8c1;
@@ -11,7 +11,7 @@
 /* ------------------------------------------------------------------------------------------------------- */
 
 .Верхняя-панель  {
-	opacity: 0.8;
+	opacity: 0.9;
 	z-index: 2;
    height: 50px;
    width: 100%;
@@ -21,6 +21,7 @@
    align-items: center;
    justify-content: flex-start;
    background: url(../медиа/задник-верх.png)  right center/cover no-repeat;
+   backdrop-filter: blur(10px);
 }
 
 .Навигация {
@@ -55,7 +56,7 @@
 	border-radius: 15px;
 }
 
-.Навигация li a:hover {
+.Навигация li a:hover, .Навигация li a:active{
 	border-bottom: none;
 	background-color: #6400c8;
 	text-decoration: none;
@@ -76,12 +77,15 @@
 }
 
 .Сайдбар {
+	background: linear-gradient(90deg, rgba(118,159,68,1) 0%, rgba(56,56,193,1) 44%, rgba(60,207,209,1) 82%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	padding-left: 15px;
 	grid-area: sidebar;
 }
 
 .Сайдбар a {
-	padding: 20px;
+	padding: 25px;
 	background: none;
 	border: none;
 	text-decoration: none;
@@ -89,16 +93,18 @@
 }
 
 .Сайдбар ul {
-	line-height: 35px;
+	line-height: 42px;
 	padding-left: 0;
 	width: max-content;
 	height: max-content;
-	border-left: 2px solid black;
+	border-left: 2px solid dimgrey;
 	list-style-type: none;
 }
 
 .Сайдбар ul li:hover {
-	background: rgba(27, 28, 28, 0.88);
+	-webkit-text-fill-color: #ccc8c1;
+	background: linear-gradient(90deg, rgba(170,28,28,1) 0%, rgba(161,91,46,1) 16%, rgba(125,122,36,1) 32%, rgba(45,130,31,1) 48%, 
+		                                 rgba(24,105,112,1) 64%, rgba(41,50,124,1) 80%, rgba(115,33,131,1) 100%);   
 	block-size: border-box;
 }
 
@@ -107,7 +113,8 @@
 	grid-area: text;
 	display: flex;
 	flex-direction: column;
-	padding: 15px;
+	padding: 35px;
+	padding-top: 15px;
 }
 
 .Сам-контент ul {
@@ -131,6 +138,17 @@
 	width: 80%;
 }
 
+#Картиночки {
+	display: flex;
+}
+
+#Картиночки picture {
+	font-family: 'Amatic SC';
+	font-size: 165%;
+	text-align: center;
+	padding: 15px;
+}
+
 @media screen and (max-width: 920px) {
 
 	.Цитата {
@@ -145,6 +163,10 @@
    .Сайдбар {
    	display: none;
    }
+
+   #Картиночки {
+   	flex-direction: column;
+   }
 }
 
 /* Стили для главного контента на странице как и для стишков снизу, секретов нет, лишь простота*/
@@ -153,6 +175,7 @@
 /* ------------------------------------------------------------------------------------------------------- */
 
 .Мюсли {
+	font-family: 'Caveat', cursive;
 	display: flex;
 	flex-flow: column wrap;
 	align-items: center;
@@ -173,7 +196,7 @@
 	padding: 8px 0px 25px 0px;
 	width: 100%;
    text-align: center;
-   font-size: 95%;
+   font-size: 110%;
    font-style: italic;
 }
 
@@ -182,7 +205,7 @@
    margin-top: 0px;
 }
 
-/* Стили для стишком, все очень просто (предельно просто, лишь взгляните в хтмл) */
+/* Стили для стишков, все очень просто (предельно просто, лишь взгляните в хтмл) */
 
 /* ------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------- */
@@ -200,18 +223,16 @@
 	padding-bottom: 13px;
 	text-align: center;
    font-style: italic;
-   font-size: 80%;
+   font-size: 68%;
 }
-
-/* Общий блок всего футера (самый низ) и нижний текст */
-
-
 
 .Титры {
    display: grid;
    grid-template-areas: "col1 col2 col3";
    grid-template-columns: repeat(3, 1fr);
    grid-row: max-content;
+   font-family: 'Press Start 2P', cursive;
+   font-size: 65%;
    line-height: 33px;
    margin: 0px;
    padding-top: 15px;
@@ -258,8 +279,8 @@
 }
 
 .Титры h3 {
-	font-size: 90%;
 	font-family: 'Press Start 2P', cursive;
+	font-size: 115%;
 	padding: 0px;
 	margin: 0px;
 }

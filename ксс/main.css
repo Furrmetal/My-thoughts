@@ -52,24 +52,16 @@ textarea {
 	border: 0px;
 }
 
-h1 {
-	font-size: 150%;
-	font-family: 'Monsterrat', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Infant', serif;
 }
 
 h2 {
-	font-size: 130%;
-	font-family: 'Monsterrat', sans-serif;
   display: inline-block;
   width: max-content;
 }
 
-h3 {
-	font-family: 'Monsterrat', sans-serif;
-}
-
 h4 {
-	font-family: 'Monsterrat', sans-serif;
 	margin:6px;
 	margin-bottom: 0px;
 }
