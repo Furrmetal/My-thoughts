@@ -2,7 +2,7 @@
    font-family: 'Neucha', cursive;
    font-size: 20px;
 	margin: 0px;
-	background: linear-gradient(90deg, rgba(38,31,31,1) 0%, rgba(88,26,73,1) 51%, rgba(138,27,87,1) 100%);
+	background: rgba(51, 28, 103, 1.0);
 	color: #ccc8c1;
 	line-height: 22.5px;
 }
@@ -20,8 +20,7 @@
    display: flex;
    align-items: center;
    justify-content: flex-start;
-   background: url(../медиа/задник-верх.png)  right center/cover no-repeat;
-   backdrop-filter: blur(10px);
+   background: url(../медиа/задник-верх.png) center/cover no-repeat;
 }
 
 .Навигация {
@@ -67,6 +66,12 @@
 /* ------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------- */
 
+.Обертка {
+	margin-top: 0;
+	background: radial-gradient(circle, rgba(51,30,99,1) 21%, rgba(51,28,103,1) 51%, rgba(32,24,48,1) 100%);
+   animation: 5s sheesh;
+}
+
 .Главный-контент {
 	display: grid;
 	grid-template-areas: "text sidebar";
@@ -77,6 +82,7 @@
 }
 
 .Сайдбар {
+	position: sticky;
 	background: linear-gradient(90deg, rgba(118,159,68,1) 0%, rgba(56,56,193,1) 44%, rgba(60,207,209,1) 82%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -95,7 +101,7 @@
 .Сайдбар ul {
 	line-height: 42px;
 	padding-left: 0;
-	width: max-content;
+	box-sizing: border-box;
 	height: max-content;
 	border-left: 2px solid dimgrey;
 	list-style-type: none;
@@ -104,8 +110,7 @@
 .Сайдбар ul li:hover {
 	-webkit-text-fill-color: #ccc8c1;
 	background: linear-gradient(90deg, rgba(170,28,28,1) 0%, rgba(161,91,46,1) 16%, rgba(125,122,36,1) 32%, rgba(45,130,31,1) 48%, 
-		                                 rgba(24,105,112,1) 64%, rgba(41,50,124,1) 80%, rgba(115,33,131,1) 100%);   
-	block-size: border-box;
+		                                rgba(24,105,112,1) 64%, rgba(41,50,124,1) 80%, rgba(115,33,131,1) 100%);
 }
 
 .Сам-контент {
@@ -113,7 +118,7 @@
 	grid-area: text;
 	display: flex;
 	flex-direction: column;
-	padding: 35px;
+	padding: 25px;
 	padding-top: 15px;
 }
 
@@ -140,6 +145,7 @@
 
 #Картиночки {
 	display: flex;
+   justify-content: center;
 }
 
 #Картиночки picture {
@@ -151,10 +157,10 @@
 
 @media screen and (max-width: 920px) {
 
-   .Цитата {
-	width: 90%;
-	margin-left: 0px
-   }
+	.Цитата {
+		width: 90%;
+		margin-left: 0px;
+	}
 
    .Главный-контент {
    	grid-template-areas: "text text";
@@ -169,24 +175,35 @@
    }
 }
 
+@keyframes sheesh {
+	from {
+		opacity: 0;
+	}
+   to {
+   	opacity: 1;
+   }
+}
+
 /* Стили для главного контента на странице как и для стишков снизу, секретов нет, лишь простота*/
 
 /* ------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------- */
 
 .Мюсли {
+	overflow: hidden;
 	font-family: 'Caveat', cursive;
 	display: flex;
 	flex-flow: column wrap;
 	align-items: center;
 	justify-content: center;
-	background: linear-gradient(55deg, rgba(39,33,41,1) 0%, rgba(83,38,74,1) 44%, rgba(151,41,88,1) 100%);
+	background: radial-gradient(circle, rgba(84,42,98,1) 18%, rgba(79,31,70,1) 51%, rgba(87,14,45,1) 100%);
 	border-top: 5px solid #2A2121;
 	padding: 0px;
 	margin: 0px;
 }
 
 .Мюсли table {
+	animation: 5s fadeRight;
 	width: 100%;
 	padding: 1vw;
 	padding-bottom: 0px;
@@ -205,15 +222,28 @@
    margin-top: 0px;
 }
 
+@keyframes fadeRight {
+	from {
+		margin-left: 100%;
+		opacity: 0;
+	}
+
+	to {
+		margin-left: inherit;
+		opacity: 1;
+	}
+}
+
 /* Стили для стишков, все очень просто (предельно просто, лишь взгляните в хтмл) */
 
 /* ------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------- */
 
 .Футер {
+	bottom: 0;
 	opacity: 0.6;
 	color: #313131;
-	background-color: #9E9E9E;
+	background: #94808f;
 	margin: 0px;
 }
 
