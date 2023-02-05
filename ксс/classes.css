@@ -61,6 +61,10 @@
 	text-decoration: none;
 	color: #BA20BA;
 }
+
+.Навигация a:focus {
+	border-bottom: none;
+}
 /* Полностью описывает поведение верхнего меню, надо переделать (!!!) */
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -69,7 +73,6 @@
 .Обертка {
 	margin-top: 0;
 	background: radial-gradient(circle, rgba(51,30,99,1) 21%, rgba(51,28,103,1) 51%, rgba(32,24,48,1) 100%);
-   animation: 5s sheesh;
 }
 
 .Главный-контент {
@@ -82,7 +85,9 @@
 }
 
 .Сайдбар {
+	height: max-content;
 	position: sticky;
+	top: 10vw;
 	background: linear-gradient(90deg, rgba(118,159,68,1) 0%, rgba(56,56,193,1) 44%, rgba(60,207,209,1) 82%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -114,6 +119,7 @@
 }
 
 .Сам-контент {
+	animation: 5s sheesh;
 	line-height: 26.5px;
 	grid-area: text;
 	display: flex;
@@ -127,12 +133,11 @@
 	height: initial;
 	border: none;
 	list-style-type: disc;
-	margin-top: 0px;
+	margin: 10px;
 }
 
 .Сам-контент p {
-	margin: 0px;
-	margin-top: 25px;
+	margin: 15px
 }
 
 .Цитата {
@@ -144,8 +149,14 @@
 }
 
 #Картиночки {
+	align-self: center;
+	margin: 15px;
+	width: max-content;
+	border: 3px solid black;
+	border-radius: 20px;
+	background: #161111;
 	display: flex;
-   justify-content: center;
+   align-items: center;
 }
 
 #Картиночки picture {
@@ -153,6 +164,12 @@
 	font-size: 165%;
 	text-align: center;
 	padding: 15px;
+}
+
+#Оценка {
+	margin: 15px;
+	width: max-content;
+	align-self: end;
 }
 
 @media screen and (max-width: 920px) {
@@ -171,15 +188,18 @@
    }
 
    #Картиночки {
+   	width: inherit;
    	flex-direction: column;
    }
 }
 
 @keyframes sheesh {
 	from {
+		color: #000;
 		opacity: 0;
 	}
    to {
+   	color: #fff;
    	opacity: 1;
    }
 }

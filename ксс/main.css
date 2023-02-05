@@ -89,3 +89,7 @@ hr {
 	color: #242424;
 	margin: 0px 15px 0px 15px;
 }
+
+fieldset {
+	width: max-content;
+}
