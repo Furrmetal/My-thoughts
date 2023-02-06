@@ -1,36 +1,43 @@
 #Тело {
+	background: rgba(51, 28, 103, 1.0);
+
+	margin: 0px;
+
    font-family: 'Neucha', cursive;
    font-size: 20px;
-	margin: 0px;
-	background: rgba(51, 28, 103, 1.0);
-	color: #ccc8c1;
-	line-height: 22.5px;
+   line-height: 22.5px;
+   color: #ccc8c1;
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------- */
 
 .Верхняя-панель  {
-	opacity: 0.9;
-	z-index: 2;
-   height: 50px;
-   width: 100%;
-   position: sticky;
-   top: 0;
    display: flex;
    align-items: center;
    justify-content: flex-start;
+
+   height: 50px;
+   width: 100%;
+   opacity: 0.9;
    background: url(../медиа/задник-верх.png) center/cover no-repeat;
+
+   position: sticky;
+   z-index: 2;
+   top: 0;
 }
 
 .Навигация {
-	height: 100%;
-	padding-left: 10px;
 	display: flex;
    align-items: center;
+
+	height: 100%;
+
+	padding-left: 10px;
 }
 
-.Навигация nav {
+.Навигация ul {	
+	margin: 0px;
 	padding-left: 5px;
 }
 
@@ -39,27 +46,26 @@
 	border-radius: 50px;
 }
 
-.Навигация ul {	
-	margin: 0px;
-	padding-left: 5px;
-}
-
 .Навигация li {
 	display: inline-block;
+
 	text-decoration: none;
+}
+
+.Навигация li a:hover, .Навигация li a:active{
+	background-color: #6400c8;
+	border-bottom: none;
+
+	text-decoration: none;
+	color: #BA20BA;
 }
 
 .Навигация a {
 	display: block;
-	padding: 10px;
-	border-radius: 15px;
-}
 
-.Навигация li a:hover, .Навигация li a:active{
-	border-bottom: none;
-	background-color: #6400c8;
-	text-decoration: none;
-	color: #BA20BA;
+   border-radius: 15px;
+
+	padding: 10px;
 }
 
 .Навигация a:focus {
@@ -71,8 +77,9 @@
 /* ------------------------------------------------------------------------------------------------------- */
 
 .Обертка {
-	margin-top: 0;
 	background: radial-gradient(circle, rgba(51,30,99,1) 21%, rgba(51,28,103,1) 51%, rgba(32,24,48,1) 100%);
+
+	margin-top: 0;
 }
 
 .Главный-контент {
@@ -80,60 +87,21 @@
 	grid-template-areas: "text sidebar";
 	grid-template-columns: 4fr 1fr;
 	grid-gap: 1vw;
+
 	width: 100%;
    margin: 0px;
 }
 
-.Сайдбар {
-	height: max-content;
-	position: sticky;
-	top: 10vw;
-	background: linear-gradient(90deg, rgba(118,159,68,1) 0%, rgba(56,56,193,1) 44%, rgba(60,207,209,1) 82%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	padding-left: 15px;
-	grid-area: sidebar;
-}
-
-.Сайдбар a {
-	padding: 25px;
-	background: none;
-	border: none;
-	text-decoration: none;
-	color: inherit;
-}
-
-.Сайдбар ul {
-	line-height: 42px;
-	padding-left: 0;
-	box-sizing: border-box;
-	height: max-content;
-	border-left: 2px solid dimgrey;
-	list-style-type: none;
-}
-
-.Сайдбар ul li:hover {
-	-webkit-text-fill-color: #ccc8c1;
-	background: linear-gradient(90deg, rgba(170,28,28,1) 0%, rgba(161,91,46,1) 16%, rgba(125,122,36,1) 32%, rgba(45,130,31,1) 48%, 
-		                                rgba(24,105,112,1) 64%, rgba(41,50,124,1) 80%, rgba(115,33,131,1) 100%);
-}
-
 .Сам-контент {
-	animation: 5s sheesh;
-	line-height: 26.5px;
 	grid-area: text;
 	display: flex;
 	flex-direction: column;
+
+   animation: 5s sheesh;
 	padding: 25px;
 	padding-top: 15px;
-}
 
-.Сам-контент ul {
-	position: static;
-	height: initial;
-	border: none;
-	list-style-type: disc;
-	margin: 10px;
+	line-height: 26.5px;
 }
 
 .Сам-контент p {
@@ -141,67 +109,111 @@
 }
 
 .Цитата {
-	border-radius: 7px;
+	width: 80%;
 	background-color: #161111;
+	border-radius: 7px;
+
 	padding: 0px;
 	margin: 17px 0px 17px 15px;
-	width: 80%;
+}
+
+.Сам-контент ul {
+	height: initial;
+	border: none;
+
+	position: static;
+
+	margin: 10px;
+
+	list-style-type: disc;
 }
 
 #Картиночки {
+	display: flex;
 	align-self: center;
-	margin: 15px;
-	width: max-content;
+	align-items: center;
+
+   width: max-content;
+	background: #161111;
 	border: 3px solid black;
 	border-radius: 20px;
-	background: #161111;
-	display: flex;
-   align-items: center;
+
+	margin: 15px;
 }
 
 #Картиночки picture {
+   padding: 15px;
+
 	font-family: 'Amatic SC';
 	font-size: 165%;
 	text-align: center;
-	padding: 15px;
+}
+
+#Картиночки img {
+	width: 14vw;
+	height: 18vw;
+	opacity: 0.85;
+
+	margin: 12.5px;
 }
 
 #Оценка {
-	margin: 15px;
-	width: max-content;
 	align-self: end;
+
+   width: max-content;
+
+	margin: 15px;
 }
 
-@media screen and (max-width: 920px) {
+#Оценка fieldset {
+	border: solid black;
+	border-radius: 15px;
 
-	.Цитата {
-		width: 90%;
-		margin-left: 0px;
-	}
-
-   .Главный-контент {
-   	grid-template-areas: "text text";
-   }
-
-   .Сайдбар {
-   	display: none;
-   }
-
-   #Картиночки {
-   	width: inherit;
-   	flex-direction: column;
-   }
+	accent-color: rebeccapurple;
 }
 
-@keyframes sheesh {
-	from {
-		color: #000;
-		opacity: 0;
-	}
-   to {
-   	color: #fff;
-   	opacity: 1;
-   }
+.Сайдбар {
+	grid-area: sidebar;
+
+	height: max-content;
+	background: linear-gradient(90deg, rgba(118,159,68,1) 0%, rgba(56,56,193,1) 44%, rgba(60,207,209,1) 82%);
+
+	position: sticky;
+	top: 10vw;
+
+	padding-left: 15px;
+
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.Сайдбар ul {
+	height: max-content;
+	box-sizing: border-box;
+	border-left: 2px solid dimgrey;
+
+	padding-left: 0;
+
+	line-height: 42px;
+	list-style-type: none;
+}
+
+.Сайдбар ul li:hover {
+	background: linear-gradient(90deg, rgba(170,28,28,1) 0%, rgba(161,91,46,1) 16%, rgba(125,122,36,1) 32%, 
+		                                rgba(45,130,31,1) 48%,rgba(24,105,112,1) 64%,rgba(41,50,124,1) 80%, 
+		                                rgba(115,33,131,1) 100%);
+
+	-webkit-text-fill-color: #ccc8c1;
+}
+
+.Сайдбар a {
+	background: none;
+	border: none;
+
+	padding: 25px;
+
+	text-decoration: none;
+	color: inherit;
 }
 
 /* Стили для главного контента на странице как и для стишков снизу, секретов нет, лишь простота*/
@@ -210,31 +222,19 @@
 /* ------------------------------------------------------------------------------------------------------- */
 
 .Мюсли {
-	overflow: hidden;
-	font-family: 'Caveat', cursive;
 	display: flex;
 	flex-flow: column wrap;
 	align-items: center;
 	justify-content: center;
+
+	overflow: hidden;
 	background: radial-gradient(circle, rgba(84,42,98,1) 18%, rgba(79,31,70,1) 51%, rgba(87,14,45,1) 100%);
 	border-top: 5px solid #2A2121;
+
 	padding: 0px;
 	margin: 0px;
-}
 
-.Мюсли table {
-	animation: 5s fadeRight;
-	width: 100%;
-	padding: 1vw;
-	padding-bottom: 0px;
-}
-
-.Мюсли table tr td{
-	padding: 8px 0px 25px 0px;
-	width: 100%;
-   text-align: center;
-   font-size: 110%;
-   font-style: italic;
+	font-family: 'Caveat', cursive;
 }
 
 .Мюсли h3 {
@@ -242,16 +242,22 @@
    margin-top: 0px;
 }
 
-@keyframes fadeRight {
-	from {
-		margin-left: 100%;
-		opacity: 0;
-	}
+.Мюсли table {
+	animation: 5s fadeRight;
+	width: 100%;
 
-	to {
-		margin-left: inherit;
-		opacity: 1;
-	}
+	padding: 1vw;
+	padding-bottom: 0px;
+}
+
+.Мюсли table tr td{
+	width: 100%;
+
+	padding: 8px 0px 25px 0px;
+
+   text-align: center;
+   font-size: 110%;
+   font-style: italic;
 }
 
 /* Стили для стишков, все очень просто (предельно просто, лишь взгляните в хтмл) */
@@ -260,20 +266,15 @@
 /* ------------------------------------------------------------------------------------------------------- */
 
 .Футер {
-	bottom: 0;
-	opacity: 0.6;
-	color: #313131;
 	background: #94808f;
-	margin: 0px;
-}
+	opacity: 0.6;
 
-.Футер p {
-	margin-bottom: 0px;
-	margin-top: 13px;
-	padding-bottom: 13px;
-	text-align: center;
-   font-style: italic;
-   font-size: 68%;
+	bottom: 0;
+
+	margin: 0px;
+
+   font-family: 'Comfortaa', cursive;
+	color: #313131;
 }
 
 .Титры {
@@ -281,16 +282,14 @@
    grid-template-areas: "col1 col2 col3";
    grid-template-columns: repeat(3, 1fr);
    grid-row: max-content;
-   font-family: 'Press Start 2P', cursive;
-   font-size: 65%;
-   line-height: 33px;
+
    margin: 0px;
    padding-top: 15px;
    padding-bottom: 15px;
-}
 
-.Титры ul {
-   margin: auto;
+   font-family: 'Comfortaa', cursive;
+   font-size: 76%;
+   line-height: 33px;
 }
 
 .столб-1 {
@@ -305,10 +304,19 @@
 	grid-area: col3;
 }
 
-.Титры ul {
+.Титры h3 {
+	font-family: 'Comfortaa', cursive;
 	padding: 0px;
+	margin: 0px;
+}
+
+.Титры ul {
 	height: 100%;
 	width: 100%;
+
+	margin: auto;
+	padding: 0px;
+
 	text-align: center;
 	list-style: none;
 }
@@ -318,21 +326,12 @@
 	color: #313131;
 }
 
-@media screen and (max-width: 920px) {
-	.Титры {
-     row-gap: 25px;
-	  grid-template-areas: "col1 col2"
-	                       "col3 col3";
-	  grid-template-columns: repeat(2, 1fr);
-	  grid-template-rows: max-content max-content;
-	}
-}
+.Футер p {
+	margin: 13px 0px 0px 0px;
+	padding: 0px 0px 13px 0px;
 
-.Титры h3 {
-	font-family: 'Press Start 2P', cursive;
-	font-size: 115%;
-	padding: 0px;
-	margin: 0px;
+	text-align: center;
+   font-size: 65%;
 }
 
 /* Правила для заголовков списков, декорация ссылок в списке, а также правила для блока в целом */

@@ -1,0 +1,67 @@
+@media screen and (max-width: 920px) {
+   .Главный-контент {
+   	grid-template-areas: "text text";
+   }
+
+   .Сам-контент {
+   	padding: 25px 0px 25px 15px;
+   }
+
+	.Цитата {
+		width: 90%;
+
+		margin-left: 0px;
+	}
+
+   #Картиночки {
+   	flex-direction: column;
+
+   	width: inherit;
+   }
+
+   #Картиночки img {
+	   width: 70vw;
+	   height: 80vw;
+   }
+
+   .Сайдбар {
+   	display: none;
+   }
+
+   .Футер p {
+     padding: 0px 15px 13px 15px;
+   }
+
+   .Титры {
+     row-gap: 25px;
+     grid-template-areas: "col1 col2"
+                          "col3 col3";
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: max-content max-content;
+   }
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+
+@keyframes sheesh {
+   from {
+      color: #000;
+      opacity: 0;
+   }
+   to {
+      color: #fff;
+      opacity: 1;
+   }
+}
+
+@keyframes fadeRight {
+   from {
+      margin-left: 100%;
+      opacity: 0;
+   }
+   to {
+      margin-left: inherit;
+      opacity: 1;
+   }
+}
