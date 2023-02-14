@@ -172,6 +172,20 @@
 	accent-color: rebeccapurple;
 }
 
+#Оценка button {
+	display: inline-block;
+
+	float: right;
+	background: rebeccapurple;
+	border-radius: 5px;
+	border-color: transparent;
+
+	padding-top: 8px;
+
+	font-size: 17px;
+	font-family: "Neucha";
+}
+
 .Сайдбар {
 	grid-area: sidebar;
 
