@@ -16,5 +16,7 @@
 ## Социальные сети
 
 [Вконтакте](https://vk.com/furmetal)
+
 [Telegram](https://t.me/envwiun)
+
 [Discord](https://discord.gg/BsV6kH6cPX)
