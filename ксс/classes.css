@@ -9,6 +9,39 @@
    color: #ccc8c1;
 }
 
+.Прелоадер {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+   position: fixed;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 1001;
+
+   overflow: hidden;
+   backdrop-filter: blur(15px);
+}
+
+.ГифкаПрел {
+	background: url(../медиа/прела.gif) no-repeat;
+   opacity: 0.8;
+   
+	border-radius: 10px;
+   width: 220px;
+   height: 165px;
+}
+
+.сокрытие .Прелоадер {
+	transition: 1s opacity;
+	opacity: 0;
+}
+
+.скрыто .Прелоадер {
+	display: none;
+}
+
 /* ------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------- */
 
