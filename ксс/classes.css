@@ -50,7 +50,7 @@
    align-items: center;
    justify-content: flex-start;
 
-   height: 50px;
+   height: 55px;
    width: 100%;
    opacity: 0.9;
    background: url(../медиа/задник-верх.png) center/cover no-repeat;
@@ -75,8 +75,7 @@
 }
 
 .Навигация img {
-	width: 40px;
-	border-radius: 50px;
+	width: 50px;
 }
 
 .Навигация li {
@@ -96,7 +95,8 @@
 .Навигация a {
 	display: block;
 
-   border-radius: 15px;
+   font-size: 105%;
+   border-radius: 10px;
 
 	padding: 10px;
 }
@@ -167,8 +167,8 @@
 	align-items: center;
 
    width: max-content;
+   opacity: 0.9;
 	background: #161111;
-	border: 3px solid black;
 	border-radius: 20px;
 
 	margin: 15px;
@@ -184,7 +184,7 @@
 
 #Картиночки img {
 	width: 14vw;
-	height: 18vw;
+	height: 14vw;
 	opacity: 0.85;
 
 	margin: 12.5px;

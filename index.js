@@ -3,10 +3,11 @@ window.onload = function () {
     window.setTimeout(function() {
         document.body.classList.add('скрыто');
         document.body.classList.remove('сокрытие');
-    }, 500); remove()
+        remove()
+    }, 1000);
 }
 
 function remove () {
-    var deleting = document.getElementsByClassName('Прелоадер');
-    deleting.parentNode.removeChild('deleting');
+    var deletting = document.getElementsByClassName('Прелоадер');
+    deletting.parentNode.removeChild('deletting');
 }
